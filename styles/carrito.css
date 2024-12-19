@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  background-color: #0c1120;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 40, 0.5)), url(../image/city.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+/*TARJETAS DE LOS PRODUCTOS*/
+
+.titulo_carrito{
+  font-size: 60px;
+  text-align: center;
+}
+
+.agregar_item {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section_carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto 50px;
+}
+
+.titulo_carrito {
+  font-size: 35px;
+}
+
+.carrito_vacio {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.lista_carrito {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.datos_carrito {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.total_carrito {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.botones_carrito {
+  display: flex;
+  gap: 50px;
+}
+
+.boton_carrito {
+  background-color: #4CAF50;
+  color: #fff;
+  padding:15px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.producto_carrito {
+  background-color: #0c1120;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.producto_contenido {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  font-size: 20px;
+}
+
+.imagen_producto {
+  width: 75%;
+  border-radius: 10px;
+}
+
+.eliminar_producto {
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30%;
+  font-size: 16px;
+}
+
+@media (max-width:768px) {
+  .carrito_contenido {
+    max-width: 300px;
+  }
+
+  .producto_contenido {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .imagen_producto {
+    width: 100%;
+  }
+
+  .eliminar_producto {
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .carrito_contenido {
+    max-width: 768px;
+  }
+
+  .producto_contenido {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .eliminar_producto {
+    width: 80%;
+    height: 100%;
+  }
+}

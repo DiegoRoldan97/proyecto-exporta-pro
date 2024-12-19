@@ -1,0 +1,65 @@
+/* -------------- NAVBAR -------------- */
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.nav_items {
+  display: flex;
+  align-items: center;
+}
+
+.carrito {
+  margin: 0 20px;
+}
+
+.nombre-empresa {
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.item {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* -------------- FOOTER -------------- */
+
+.footer {
+  text-align: center;
+  border-right-width: 15px;
+  font-size: 18px;
+}
+
+.derechos-footer {
+  font-size: 20px;
+}
+
+@media (max-width:568px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav_items {
+    margin: 0 80px;
+  }
+}
+
+@media (max-width:768px) {
+  .nombre-empresa {
+    font-size: 30px;
+  }
+  
+  .item {
+    margin: 0 2px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .item {
+    margin: 0 5px;
+  }
+}

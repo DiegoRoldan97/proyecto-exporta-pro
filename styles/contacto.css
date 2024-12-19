@@ -1,0 +1,168 @@
+.item {
+  margin: 0 10px;
+}
+
+.body-contacto {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 40, 0.5)), url(../image/puerto.jpg);
+  font-family: "Catamaran", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #000;
+}
+
+.form_container {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 15px 18px 40px -4px rgba(0,0,0,0.75);
+  padding: 60px 40px 0px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.comment_input {
+  margin: 0;
+}
+
+label {
+  margin: 0 0 5px;
+}
+
+input, textarea {
+  padding: 15px 5px;
+  border-radius: 10px;
+  border: none;
+  color: #000;
+}
+
+.form_title {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.button_container{
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.button_send {
+  box-shadow: 0px 10px 14px -12px #fff;
+	background-color:transparent;
+	border-radius:10px;
+	border:1px solid #fff;
+	display:inline-block;
+	cursor:pointer;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 1px #000;
+  transition: all .5s ease;
+}
+
+.button_send:hover {
+  color: #001F3F;
+  background-color: #fff;
+}
+
+.button_send:active {
+  position: relative;
+	top: 1px;
+}
+
+
+
+/* ------------------------------------------ */
+/* Media Queries */
+
+/* Móviles */
+@media (max-width: 768px) {
+  .body-contacto {
+    height: 100vh;
+    padding: 20px;
+  }
+  .form_container {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  .form {
+    padding: 20px;
+  }
+  .input {
+    margin-bottom: 20px;
+  }
+  .button_container {
+    margin: 10px;
+  }
+  .button_send {
+    padding: 10px 20px;
+  }
+  .titulo {
+    padding-top: 30px;
+  }
+}
+
+/* Tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .body-contacto {
+    height: 100vh;
+    padding: 40px;
+  }
+  .form_container {
+    max-width: 80%;
+    margin: 40px auto;
+  }
+  .form {
+    padding: 40px;
+  }
+  .input {
+    margin-bottom: 30px;
+  }
+  .button_container {
+    margin: 20px;
+  }
+  .button_send {
+    padding: 15px 30px;
+  }
+}
+
+/* Computadoras */
+@media (min-width: 1025px) {
+  .body-contacto {
+    height: 100vh;
+    padding: 60px;
+  }
+  .form_container {
+    max-width: 60%;
+    margin: 60px auto;
+  }
+  .form {
+    padding: 60px;
+  }
+  .input {
+    margin-bottom: 40px;
+  }
+  .button_container {
+    margin: 30px;
+  }
+  .button_send {
+    padding: 20px 40px;
+  }
+}

@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  background-color: #0c1120;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-home {
+  margin: 50px 0;
+}
+
+.titulo-section  {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+/* -------------- HEADER -------------- */
+
+.header{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 40, 0.5)), url(../image/city.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.presentacion {
+  text-align: center;
+  margin: 15px 0 5px 0;
+  padding-bottom: 10px;
+}
+
+.quien{
+  font-size: 60px;
+  text-align: center;
+}
+.comentario {
+  font-size: 42px;
+  text-align: center;
+  margin: 80px 30px;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.flecha {
+	box-shadow: 0px 1px 0px 0px #ffffff;
+	background-color: #fff;
+	border-radius:10px;
+	border:1px solid #dcdcdc;
+	cursor:pointer;
+  color: #000;
+	font-size:20px;
+	padding:20px 60px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+  transition: .4s ease all;
+}
+.flecha:hover {
+	background-color: rgba(26, 26, 34, 0.5);
+  color: #fff;
+}
+.flecha:active {
+	position:relative;
+	top:1px;
+}
+
+/* ------------------------------------------ */
+
+.titulo {
+  text-align: center;
+  margin: 0px 0;
+  font-size: 36px;
+  margin-top: 15px;
+
+}
+
+.navegacion {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* -------------- BENEFICIOS -------------- */
+
+.image img{
+  width: 150px;
+  height: auto;
+}
+
+.cardGroup{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: 2px solid black;
+  width: calc(100% - 10px);
+  text-align: center;
+  align-self: center;
+  color: black;
+}
+.image {
+  text-align:center;
+  padding: 15px 0;
+}
+.description-card {
+  padding: 8px;
+  flex-grow: 1;
+}
+
+.description-card p {
+  color: black;
+}
+
+@media (width<400px){
+  .cardGroup{
+    grid-template-columns: 1fr;
+    width: 50vw;
+    justify-content: center
+}
+
+.card{
+  margin-top: 15px
+ }
+}
+
+/* --------------  RESEÑAS -------------- */
+
+.resenas-container{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.tarjeta-resenas {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  gap: 50px;
+  background-color: #444444;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.imagen-resenas {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contenido h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contenido p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* -------------- SECCIÓN UBICACIÓN -------------- */
+
+.section-beneficios {
+  text-align: center;
+}
+
+.info-ubicacion {
+  font-size: 20px;
+}
+
+.mapa-ubicacion {
+  margin: 20px 0 0 0;
+}
+
+
+/*MOVILES (MENOS DE 768PX*/
+
+@media (max-width: 768px) {
+
+  .presentacion {
+    margin: 10px 0;
+  }
+
+  .quien {
+    font-size: 25px;
+  }
+
+  .comentario {
+    font-size: 20px;
+  }
+
+  .cardGroup {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 300px;
+  }
+
+  .tarjeta-resenas {
+    flex-direction: column;
+    max-width: 300px;
+  }
+}
+
+/* PANTALLAS ENTRE 768PX Y 1200PX */
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  .presentacion {
+    margin: 15px 0;
+  }
+  
+  .quien {
+    font-size: 40px;
+  }
+  
+  .comentario {
+    font-size: 30px;
+    margin: 30px 30px;
+  }
+  
+  .tarjeta-resenas {
+    max-width: 768px;
+  }
+
+  .cardGroup {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1758px) {
+  .comentario {
+    margin: 10px;
+  }
+}
